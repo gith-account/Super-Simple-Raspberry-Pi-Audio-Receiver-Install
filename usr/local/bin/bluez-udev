@@ -41,7 +41,7 @@ if [ "$action" = "remove" ]; then
     #hciconfig hci0 pscan
 
     bluetoothctl << EOT
-discoverable on
+#discoverable on
 EOT
 
     # remove any loopback modules assigned to this source
