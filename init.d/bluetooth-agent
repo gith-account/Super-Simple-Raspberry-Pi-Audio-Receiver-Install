@@ -15,9 +15,10 @@ HOME=/root
 export USER HOME
 case "$1" in
     start)
-        echo "setting bluetooth discoverable"
-	sleep 1
-        sudo hciconfig hci0 piscan
+        #echo "setting bluetooth discoverable"
+        #sleep 1
+        #sudo hciconfig hci0 piscan
+	echo "Starting bluetooth-agent"
         start-stop-daemon -S -x /usr/local/bin/simple-agent.autotrust &
         echo "bluetooth-agent started"
         ;;
