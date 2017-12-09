@@ -109,11 +109,11 @@ sudo patch /etc/bluetooth/main.conf << EOT
 ***************
 *** 15,17 ****
   # 0 = disable timer, i.e. stay discoverable forever
-! #DiscoverableTimeout = 0
+! #DiscoverableTimeout = 180
 
 --- 17,19 ----
   # 0 = disable timer, i.e. stay discoverable forever
-! DiscoverableTimeout = 0
+! DiscoverableTimeout = 180
 EOT
 
 sudo patch /etc/pulse/system.pa << EOT
